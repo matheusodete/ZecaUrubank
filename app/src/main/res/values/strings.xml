@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">ZecaUrubank</string>
+    <string name="entrar">Entrar</string>
+    <string name="senha">Senha</string>
+    <string name="cpf">CPF</string>
+    <string name="textcria">Não tem uma conta? Clique aqui!</string>
+    <string name="title_cadastro">Cadastre-se</string>
+    <string name="nome">Nome completo</string>
+    <string name="email">E-mail</string>
+    <string name="senha2">Confirme sua senha</string>
+    <string name="cep">CEP</string>
+    <string name="idade">__/__/__</string>
+    <string name="cahve_pix">PIX:</string>
+    <string name="cartao">Meus Cartões</string>
+    <string name="credito">Crédito</string>
+    <string name="saldo">R$.....</string>
+</resources>

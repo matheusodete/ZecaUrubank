@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".cadastro">
+
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_cadastro"
+        android:textSize="25sp"
+        android:textColor="@color/green"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <View
+        android:id="@+id/containerComponents"
+        style="@style/ContainerComponents"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="580dp"/>
+    <EditText
+        android:id="@+id/nome_cadastro"
+        style="@style/Edit_text"
+        android:background="@drawable/custom_input"
+        app:layout_constraintTop_toTopOf="@+id/containerComponents"
+        app:layout_constraintStart_toStartOf="@+id/containerComponents"
+        app:layout_constraintEnd_toEndOf="@id/containerComponents"
+        android:hint="@string/nome"
+        android:textColorHint="@color/green"
+        android:textColor="@color/LLLLLLL_grey"
+        android:textStyle="bold"
+        android:inputType="text"
+        />
+    <com.santalu.maskara.widget.MaskEditText
+        android:id="@+id/cpf_cadastro"
+        style="@style/Edit_text"
+        android:background="@drawable/custom_input"
+        app:layout_constraintTop_toBottomOf="@+id/nome_cadastro"
+        app:layout_constraintStart_toStartOf="@+id/containerComponents"
+        app:layout_constraintEnd_toEndOf="@id/containerComponents"
+        android:hint="@string/cpf"
+        android:textColorHint="@color/green"
+        android:textColor="@color/LLLLLLL_grey"
+        android:textStyle="bold"
+        android:inputType="number"
+        app:mask="___.___.___-__"
+        app:maskCharacter="_"
+        app:maskStyle="completable"
+        />
+    <EditText
+        android:id="@+id/email"
+        style="@style/Edit_text"
+        android:background="@drawable/custom_input"
+        app:layout_constraintTop_toBottomOf="@+id/cpf_cadastro"
+        app:layout_constraintStart_toStartOf="@+id/containerComponents"
+        app:layout_constraintEnd_toEndOf="@id/containerComponents"
+        android:hint="@string/email"
+        android:textColorHint="@color/green"
+        android:textColor="@color/LLLLLLL_grey"
+        android:textStyle="bold"
+        android:inputType="text"
+        />
+    <EditText
+        android:id="@+id/senha1"
+        style="@style/Edit_text"
+        android:background="@drawable/custom_input"
+        app:layout_constraintTop_toBottomOf="@+id/idade"
+        app:layout_constraintStart_toStartOf="@+id/containerComponents"
+        app:layout_constraintEnd_toEndOf="@id/containerComponents"
+        android:hint="@string/senha"
+        android:textColorHint="@color/green"
+        android:textColor="@color/LLLLLLL_grey"
+        android:textStyle="bold"
+        android:inputType="numberPassword"
+        android:maxLength="6"
+        android:drawableEnd="@drawable/ic_eye"
+        android:drawableTint="@color/green"
+        />
+    <EditText
+        android:id="@+id/senha2"
+        style="@style/Edit_text"
+        android:background="@drawable/custom_input"
+        app:layout_constraintTop_toBottomOf="@+id/senha1"
+        app:layout_constraintStart_toStartOf="@+id/containerComponents"
+        app:layout_constraintEnd_toEndOf="@id/containerComponents"
+        android:hint="@string/senha2"
+        android:textColor="@color/LLLLLLL_grey"
+        android:textColorHint="@color/green"
+        android:textStyle="bold"
+        android:inputType="numberPassword"
+        android:maxLength="6"
+        android:drawableEnd="@drawable/ic_eye"
+        android:drawableTint="@color/green"
+        />
+
+
+    <RadioGroup
+        android:id="@+id/select_sexo"
+        android:layout_width="125dp"
+        android:layout_height="60dp"
+        app:layout_constraintStart_toStartOf="@+id/senha2"
+        app:layout_constraintTop_toBottomOf="@+id/senha2"
+        android:layout_marginTop="20dp"
+        >
+        <RadioButton
+            android:id="@+id/radio_fem"
+            android:layout_width="115dp"
+            android:layout_height="25dp"
+            android:text="Feminino"
+            android:textSize="18sp"
+            android:textColor="@color/LLLLLLL_grey"
+            android:textStyle="bold"
+            />
+        <RadioButton
+            android:id="@+id/radio_male"
+            android:layout_width="120dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="10dp"
+            android:text="Masculino"
+            android:textSize="18sp"
+            android:textColor="@color/LLLLLLL_grey"
+            android:textStyle="bold"
+            />
+
+
+    </RadioGroup>
+
+
+    <com.santalu.maskara.widget.MaskEditText
+        android:id="@+id/endereco"
+        style="@style/Edit_text"
+        android:background="@drawable/custom_input"
+        app:layout_constraintTop_toBottomOf="@+id/email"
+        app:layout_constraintStart_toStartOf="@+id/containerComponents"
+        app:layout_constraintEnd_toEndOf="@id/containerComponents"
+        android:hint="@string/cep"
+        android:textColorHint="@color/green"
+        android:textColor="@color/LLLLLLL_grey"
+        android:textStyle="bold"
+        android:inputType="number"
+        app:mask="_____-___"
+        app:maskCharacter="_"
+        app:maskStyle="completable"
+        />
+
+    <com.santalu.maskara.widget.MaskEditText
+        android:id="@+id/idade"
+        style="@style/Edit_text"
+        android:background="@drawable/custom_input"
+        app:layout_constraintTop_toBottomOf="@+id/endereco"
+        app:layout_constraintStart_toStartOf="@+id/containerComponents"
+        app:layout_constraintEnd_toEndOf="@id/containerComponents"
+        android:hint="@string/idade"
+        android:textColorHint="@color/green"
+        android:textColor="@color/LLLLLLL_grey"
+        android:textStyle="bold"
+        android:inputType="number"
+        app:mask="__/__/____"
+        app:maskCharacter="_"
+        app:maskStyle="completable"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_cadastro"
+        style="@style/Button3"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="10dp"
+        android:text="Criar"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/containerComponents"
+        app:layout_constraintBottom_toBottomOf="@+id/containerComponents"
+        android:drawableEnd="@drawable/ic_arrow_r"
+        android:drawableTint="@color/white"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/botao_voltar"
+        style="@style/Button4"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:drawableStart="@drawable/ic_arrow_l"
+        android:drawableTint="@color/LLLLLLL_grey"
+        android:text="Voltar"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:textColor="@color/LLLLLLL_grey"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintStart_toStartOf="@id/containerComponents"
+        app:layout_constraintBottom_toBottomOf="@+id/containerComponents"
+        android:layout_marginTop="600dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
