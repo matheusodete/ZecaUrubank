@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "744611004831",
+    "project_id": "zecaurubank",
+    "storage_bucket": "zecaurubank.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:744611004831:android:207fd0b5a3d6f5a6fefdaa",
+        "android_client_info": {
+          "package_name": "com.example.zecaurubank"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "744611004831-0f197q8to4m70c6mv08vd3acbg4dkg7i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpj6E5n8SS5oanCeSKL1VF2IdftjMicDk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "744611004831-0f197q8to4m70c6mv08vd3acbg4dkg7i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
