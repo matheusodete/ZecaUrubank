@@ -3,7 +3,7 @@
 ## 1. Identificação do projeto
 
 - **Nome do projeto:** ZecaUrubank
-- **Integrantes do grupo:** Matheus Araujo Ferreira
+- **Integrantes do grupo:** Matheus Araujo e grupo do projeto original
 - **Link do repositório:** https://github.com/matheusodete/ZecaUrubank/tree/main
 - **Tecnologia utilizada:** Android nativo com Java, Firebase Authentication e Firebase Firestore
 - **Funcionalidade principal desenvolvida:** aplicativo bancário mobile com cadastro, login, tela principal, área de investimentos e modelagem de domínio para cadastro de cliente, abertura de conta e transferência bancária.
